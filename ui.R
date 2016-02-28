@@ -17,7 +17,7 @@ shinyUI(fluidPage(
                         plotOutput("mPlot", height="520px", width="820px"))
         ),
         fluidRow(
-                column(width=4,
+                column(width=3,
                        selectInput(inputId="year",
                                    label="Select year",
                                    choices=c(2015,2014,2013,2012,2011,2010,2009,2008,2007,2006),
@@ -29,7 +29,7 @@ shinyUI(fluidPage(
                                    selected="Work"
                        )
                 ),
-                column(width=8,
+                column(width=9,
                        p("Countries with the most permits of the chosen type and year"),
                        tableOutput("tbl")
                 )
